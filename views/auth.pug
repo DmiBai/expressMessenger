@@ -1,0 +1,13 @@
+doctype html
+head
+    title !{title}
+body
+    form(method="post")
+        input(type="text" placeholder="login" name="login")
+        input(type="password" placeholder="password" name="password")
+        input(type="submit")
+    if authSuccess
+        p Welcome!
+        a(href="/mailbox") mailbox
+    if authErr
+        p No registered user

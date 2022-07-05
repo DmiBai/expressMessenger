@@ -1,0 +1,13 @@
+doctype html
+head
+    title !{messages}
+body
+    form(method="post")
+        input(type="text" placeholder="login" name="authLogin")
+        input(type="password" placeholder="password" name="authPassword")
+        input(type="submit")
+    if authSuccess
+        p Welcome!
+        a(href="/main") main
+    if authErr
+        p Something went wrong.

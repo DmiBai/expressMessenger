@@ -1,0 +1,13 @@
+body {
+  padding: 5px;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+input {
+  margin-left:10px;
+}
+
+.inputP{
+  margin-left:10px;
+}

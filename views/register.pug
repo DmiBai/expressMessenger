@@ -1,0 +1,48 @@
+doctype html
+head
+    title !{reg}
+    link(rel='stylesheet', href='../stylesheets/style.css')
+body
+    if (registered===1)
+        a(href="/auth" value="auth") Successfully registered! Go to auth page.
+        br
+    else if (registered===2)
+        p User Already Registered
+        br
+    form(method="post" enctype='multipart/form-data')
+        input(type="text" name="firstName" placeholder="First Name" required)
+        div(class = "inputP") First name
+        br
+
+        input(type="text" name="lastName" placeholder="Last Name" required)
+        div(class = "inputP") Last name
+        br
+
+        input(type="text" name="login" placeholder="Login" required)
+        div(class = "inputP") Login
+        br
+
+        input(type="password" name="password" placeholder="Password" required)
+        div(class = "inputP") Password
+        br
+
+        input(type="text" name="tag" placeholder="Tag")
+        div(class = "inputP") Tag
+        br
+
+        input(type="date" name="birthDate" placeholder="birth" required)
+        div(class = "inputP") Birth date
+        br
+
+        div(class = "inputP") Sex
+        input(type="radio" name="sex" placeholder="Sex" value="Male")
+        label(for="Male") Male
+        br
+        input(type="radio" name="sex" placeholder="Sex" value="Female")
+        label(for="Female") Female
+        br
+        br
+        input(type="file" name="image")
+        div(class = "inputP") Avatar
+        br
+        input(type="submit")
